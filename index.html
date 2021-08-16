@@ -1,20 +1,87 @@
 <!-- Establece el tipo de documento-->
 <!DOCTYPE html>
 <!-- Inicio de documento -->
-<html lang="en">
+<html lang="es-CO">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Pestaña -->
-  <title>Curso de HTML</title>
+  <title>Curso de HTML - Aprendiendo HTML</title>
+  <!-- -description- No más de 165 caracteres-->
+  <meta name="description" content="Aprendiendo HTML con Jon Mircha">
 </head>
 
 <body>
   <!-- Cuerpo del documento (desde acá es lo que hay en la página) -->
   <h1>Bienvenido al curso de HTML</h1>
   <p>Curso de HTML Johnathan Mircha</p>
+
+  <hr>
+
+  <h2>Encabezados</h2>
+  <h1>Encabezado lvl 1 - Solo puede existir un H1 por documento HTML</h1>
+  <h2>Encabezado lvl 2</h2>
+  <h3>Encabezado lvl 3</h3>
+  <h4>Encabezado lvl 4</h4>
+  <h5>Encabezado lvl 5</h5>
+  <h6>Encabezado lvl 6</h6>
+
+  <hr>
+  <h2>Etiquetas de texto y salto de línea</h2>
+  <p>Un párrafo</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Deserunt est necessitatibus pariatur nemo tempore eum
+    molestiae explicabo, assumenda, doloribus distinctio modi eius accusamus blanditiis. <br><br></br>Velit hic
+    molestiae quaerat
+    tempora sint.</p>
+  <hr>
+  <h2>Etiquetas de texto semánticas</h2>
+  <p>Palabras en: <b>Negrita</b>, <i>Itálica</i>, <u>Subrayado</u>, e=mc<sup>2</sup>, H<sub>2</sub>O,
+  <mark>marca texto</mark> <small>letras pequeñas</small></p>
+  <p>
+    <strong>Este texto es importante</strong>. <em>Este texto hace énfasis</em>
+  </p>
+  <blockquote> Yo solo sé que nada sé </blockquote>
+  <cite>Sócrates</cite>
+  <hr>
+  <h2>Etiquetas de formateo</h2>
+  <p>
+  <pre>
+    Tareas por hacer:
+      - Escribir
+      - Ver una película
+      - Hacer curso de CSS
+      - Hacer push a GitHub
+  </pre>
+  </p>
+  <p>
+    <code>Este texto está en formato de código</code>
+  </p>
+
+  <p>
+    <pre>
+      <code>
+        import React from "react";
+        import Title from "./Title"
+
+        function App{
+          return &lt;Title /&gt; 
+        }
+      </code>
+    </pre>
+  </p>
+  <hr>
+  <h2>Etiquetas semánticas estructurales</h2>
+  <div>Es una etiqueta contenedora que no tiene semántica</div>
+  <header> Header - Cabecera de un sitio o de una sección </header>
+  <main>Main - Define la sección principal del documento, solo puede existir una vez por documento HTML</main>
+  <footer>Footer - Pie de página de un sitio WEB o una sección</footer>
+  <nav>Nav - Representá un menú de navegación</nav>
+  <article>Article - Representa una sección de autocontenido (que por sí sola se explica)</article>
+  <aside>Aside - Representa un contenido complementario o secundario, también se utiliza para meter publicidad</aside>
+  <section>Sectin - Representa una sección de contenido genérico</section>
+  <address>Address - Representa una dirección física</address>
 </body>
 
 </html>
