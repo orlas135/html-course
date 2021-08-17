@@ -1,0 +1,6 @@
+Páginas recomendadas:
+
+MDN
+htmlreference.io
+Para volver a mostrar la sugerencia del VSCode: ctrl + barraespaciadora
+Visual Studio cheats sheet
