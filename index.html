@@ -23,11 +23,32 @@
 
 <body>
   <!-- Cuerpo del documento (desde acá es lo que hay en la página) -->
-  <h1>Bienvenido al curso de HTML</h1>
+  <h1 id='bienvenida'>Bienvenido al curso de HTML</h1>
   <p>Curso de HTML Johnathan Mircha</p>
 
+  <h3>Temario del curso</h3>
+
+  <ul>
+    <li><a href="index.html#encabezados">Encabezados</a></li>
+    <li><a href="index.html#textoYSaltodeLinea">Etiquetas básicas de texto y saltos de línea</a></li>
+    <li><a href="index.html#textoSemanticas">Etiquetas de texto semánticas</a></li>
+    <li><a href="index.html#formateo">Etiquetas de formateo</a></li>
+    <li><a href="index.html#semanticasEstructurales">Etiquetas semánticas estructurales</a></li>
+    <li><a href="index.html#bloqueYLinea">Etiquetas de bloque y de línea</a></li>
+    <li><a href="index.html#scripts">Scripts</a></li>
+    <li><a href="index.html#imagenes">Imágenes</a></li>
+    <li><a href="index.html#figuras">Figuras</a></li>
+    <li><a href="index.html#listasOrdenadas">Listas ordenadas</a></li>
+    <li><a href="index.html#listasDesordenadas">Listas desordenadas</a></li>
+    <li><a href="index.html#listasDeDefinicion">Listas de definición</a></li>
+    <li><a href="index.html#tablas">Tablas</a></li>
+    <li><a href="index.html#linksEnlaces">Links o enlaces</a></li>
+  </ul>
+
+  <em><strong>Nos saltamos algunas secciones como la de vectores</strong></em>
+
   <hr />
-  <h2>Encabezados</h2>
+  <h2 id ='encabezados'>Encabezados</h2>
   <h1>Encabezado lvl 1 - Solo puede existir un H1 por documento HTML</h1>
   <h2>Encabezado lvl 2</h2>
   <h3>Encabezado lvl 3</h3>
@@ -36,7 +57,7 @@
   <h6>Encabezado lvl 6</h6>
 
   <hr />
-  <h2>Etiquetas de texto y salto de línea</h2>
+  <h2 id='textoYSaltodeLinea'>Etiquetas de texto y salto de línea</h2>
   <p>Un párrafo</p>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Deserunt
@@ -45,7 +66,7 @@
     <br /><br />Velit hic molestiae quaerat tempora sint.
   </p>
   <hr />
-  <h2>Etiquetas de texto semánticas</h2>
+  <h2 id= 'textoSemanticas'>Etiquetas de texto semánticas</h2>
   <p>
     Palabras en: <b>Negrita</b>, <i>Itálica</i>, <u>Subrayado</u>,
     e=mc<sup>2</sup>, H<sub>2</sub>O, <mark>marca texto</mark>
@@ -58,7 +79,7 @@
   <blockquote>Yo solo sé que nada sé</blockquote>
   <cite>Sócrates</cite>
   <hr />
-  <h2>Etiquetas de formateo</h2>
+  <h2 id = 'formateo'>Etiquetas de formateo</h2>
   <pre>
       <p>
         Tareas por hacer:
@@ -84,7 +105,7 @@
       </p>
     </pre>
   <hr />
-  <h2>Etiquetas semánticas estructurales</h2>
+  <h2 id= 'semanticasEstructurales'>Etiquetas semánticas estructurales</h2>
   <div>Es una etiqueta contenedora que no tiene semántica</div>
   <header>Header - Cabecera de un sitio o de una sección</header>
   <main>
@@ -104,7 +125,7 @@
   <section>Sectin - Representa una sección de contenido genérico</section>
   <address>Address - Representa una dirección física</address>
   <hr />
-  <h2>Etiquetas de bloque y etiquetas de línea en HTML</h2>
+  <h2 id = 'bloqueYLinea'>Etiquetas de bloque y etiquetas de línea en HTML</h2>
   <div style="background-color: aquamarine">
     La etiqueta de bloque por excelencia es Div. Las etiquetas de bloque son
     aquellas que generan saltos de línea con sus etiquetas hermanas
@@ -113,17 +134,17 @@
     ocupa el espacio necesario que tiene su contenido</span>
   <hr>
 
-  <h2>Scripts en HTML</h2>
+  <h2 id='scripts'>Scripts en HTML</h2>
   <script>
     console.log("Hola, estamos aprendiendo HTML");
   </script>
   <script src="./assets/codigos.js"></script>
 
-  <h2>Imágenes en HTML</h2>
+  <h2 id ='imagenes'>Imágenes en HTML</h2>
   <img src="./assets/img/Yoshi.png" alt="Yoshi">
 
   <hr>
-  <h2>Figuras</h2>
+  <h2 id = 'figuras'>Figuras</h2>
 
   <figure>
     <img src='./assets/img/HTML table elements.png' alt='Tabla de los elementos HTML'>
@@ -131,7 +152,7 @@
   </figure>
 
   <hr>
-  <h2>Listas ordenadas (Ordered list)</h2>
+  <h2 id='listasOrdenadas'>Listas ordenadas (Ordered list)</h2>
   <h3></h3>
   <ol>
     <li>Primavera</li>
@@ -154,7 +175,7 @@
   </ol>
 
   <hr>
-  <h2>Listas desordenadas (Unordered list)</h2>
+  <h2 id = 'listasDesordenadas'>Listas desordenadas (Unordered list)</h2>
 
   <ul type='circle'>
     <li>Ir a comprar la jaula de condorito</li>
@@ -163,7 +184,7 @@
   </ul>
 
   <hr>
-  <h2>Listas de definición</h2>
+  <h2 id = 'listasDeDefinicion'>Listas de definición</h2>
   <dl>
     <dt>HTML</dt>
     <dd>Lenguaje de marcado de hipertexto que define el contenido de una página WEB</dd>
@@ -174,7 +195,7 @@
   </dl>
 
   <hr>
-  <h2>Tablas</h2>
+  <h2 id = 'tablas'>Tablas</h2>
 
   <table>
     <tr>
@@ -247,7 +268,7 @@
 
   <hr>
 
-  <h2>Links o enlaces</h2>
+  <h2 id = 'linksEnlaces'>Links o enlaces</h2>
 
   <a href="./assets/img/hola.html" target="_blank" rel="nofollow">Este es otro documento HTML</a>
   <br>
