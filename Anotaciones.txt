@@ -5,3 +5,6 @@ htmlreference.io
 Para volver a mostrar la sugerencia del VSCode: ctrl + barraespaciadora
 Visual Studio cheats sheet
 Emojipedia.org
+Can i use
+
+Se puede obtener más información de una etiqueta mirando los enlaces en htmlreference
