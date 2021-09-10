@@ -58,8 +58,14 @@
         <a href="index.html#elementos_interactivos">Elementos interactivos</a>
       </li>
       <li><a href="index.html#audio_video"> Audio y video </a></li>
+      <li><a href="index.html#form_elements">Elementos de formularios</a></li>
       <li><a href="index.html#forms">Formularios</a></li>
-      <li><a href="index.html#iframe">iframes</a></li>
+      <li>
+        <a href="index.html#select_radio_checkbox"
+          >Selects - Radios - Checkbox</a
+        >
+      </li>
+      <li><a href="index.html#iframe">iFrames</a></li>
     </ul>
 
     <em><strong>Nos saltamos algunas secciones como la de vectores</strong></em>
@@ -451,36 +457,36 @@
 
     <hr />
 
-    <h2 id="forms">Formularios</h2>
+    <h2 id="form_elements">Elementos de formularios</h2>
 
-    <input type="text" name="" id="" />
-    <br /><br /><br /><br />
+    <input type="text" name="" id="text" />
+    <br />
     <input type="checkbox" name="" id="" />
-    <br /><br /><br /><br />
+    <br />
     <input type="date" name="" id="" />
-    <br /><br /><br /><br />
+    <br />
     <input type="color" name="" id="" />
-    <br /><br /><br /><br />
+    <br />
     <input type="button" value="Botón" />
-    <br /><br /><br /><br />
+    <br />
     <input type="submit" />
-    <br /><br /><br /><br />
+    <br />
     <input type="reset" />
-    <br /><br /><br /><br />
+    <br />
     <input type="file" multiple />
-    <br /><br /><br /><br />
+    <br />
     <input type="hidden" value="es" />
-    <br /><br /><br /><br />
-    <input type="number" value="es" />
-    <br /><br /><br /><br />
+    <br />
+    <input type="number" value="12" />
+    <br />
     <input type="email" />
-    <br /><br /><br /><br />
+    <br />
     <input type="password" required />
-    <br /><br /><br /><br />
+    <br />
     <input type="search" />
-    <br /><br /><br /><br />
+    <br />
     <textarea></textarea>
-    <br /><br /><br /><br />
+    <br />
     <select name="" id="">
       <option value="">HTML</option>
       <option value="">CSS</option>
@@ -489,5 +495,115 @@
       <option value="">Angular</option>
       <option value="">Graphql</option>
     </select>
+
+    <br /><br /><br /><br />
+    <input
+      type="text"
+      name=""
+      id="usernameElements"
+      readonly
+      value="orlas135"
+      disabled
+    />
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr />
+
+    <!-- Lo que va después del signo de interrogación son los parámetros enviados desde el formulario-->
+    <!-- Atributos: action, method, autocomplete, etc.-->
+    <h2>Formularios</h2>
+    <form autocomplete="off" id="forms">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="username"
+        pattern="^[A-Za-z]+$"
+        title="El campo solo acepta letras"
+        required
+      />
+      <br />
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Contraseña"
+        required
+      />
+      <br />
+      <input type="reset" value="Limpiar" />
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <hr />
+
+    <h2 id="select_radio_checkbox">Selects - Checkbox y RadioButtons</h2>
+    <form>
+      <p>Elige tu idioma:</p>
+      <select name="idioma" id="idioma" required>
+        <option value="" selected>Elige una opción</option>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugués</option>
+      </select>
+
+      <!-- Atributos checked y required -->
+      <p>Elige tu lenguaje de programación favorito</p>
+      <input
+        type="radio"
+        name="lenguaje_programacion"
+        id="radio-js"
+        value="js"
+      />
+      <label for="radio-js">JS</label>
+      <input
+        type="radio"
+        name="lenguaje_programacion"
+        id="radio-rb"
+        value="rb"
+      />
+      <label for="radio-rb">Ruby</label>
+      <input
+        type="radio"
+        name="lenguaje_programacion"
+        id="radio-jv"
+        value="jv"
+      />
+      <label for="radio-jv">Java</label>
+      <br /><br />
+
+      <label>
+        <input type="checkbox" name="intereses" value="deportes" />
+        Deportes
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="finanzas" />
+        Finanzas
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="salud" />
+        Salud
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="aviacion" />
+        Política
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="baile" />
+        baile
+      </label>
+
+      <br /><br />
+
+      <input type="reset" value="Limpiar" />
+      <input type="submit" value="Enviar" />
+    </form>
+    <a href="index.html#inicio">☝️</a>
   </body>
 </html>
