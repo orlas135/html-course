@@ -6,11 +6,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Pestaña -->
     <title>Curso de HTML - Aprendiendo HTML</title>
     <!-- -description- No más de 165 caracteres-->
     <meta name="description" content="Aprendiendo HTML con Jon Mircha" />
+    <meta property="og:title" content="Aprendiendo HTML" />
+    <meta property="og:description" content="Aprendiendo HTML con Jon Mircha" />
+    <!--Ruta absoluta en el dominio-->
+    <meta
+      property="og:image"
+      content="https://tudominio.com/img/periodic-table-of-html-elements.png"
+    />
+    <!--URL canónica-->
+    <meta property="og:url" content="https://tudominio.com/index.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@led_zzepelin" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/Favicon.jpg"
+      type="image/x-icon"
+    />
 
+    <link
+      rel="apple-touch-icon"
+      href="./assets/img/Favicon.jpg"
+      type="image/x-icon"
+    />
     <style>
       h2 {
         color: cadetblue;
@@ -66,6 +88,8 @@
         >
       </li>
       <li><a href="index.html#iframe">iFrames</a></li>
+      <li><a href="index.html#contact_form">Formulario de contacto</a></li>
+      <li><a href="index.html#data_attributes">Data Attributes</a></li>
     </ul>
 
     <em><strong>Nos saltamos algunas secciones como la de vectores</strong></em>
@@ -605,5 +629,85 @@
       <input type="submit" value="Enviar" />
     </form>
     <a href="index.html#inicio">☝️</a>
+
+    <hr />
+
+    <h2 id="contact_form">Formulario de contacto</h2>
+
+    <form action="https://formsubmit.co/alexorlas96@gmail.com" method="POST">
+      <input
+        type="text"
+        name="nombre"
+        id=""
+        placeholder="Escribe tu nombre"
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="El nombre solo acepta letras y espacios en blanco"
+        required
+      />
+      <br />
+      <input
+        type="email"
+        name="correo"
+        id=""
+        placeholder="Escribe tu correo"
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        required
+        title="Escribe una dirección de correo electrónico correcto"
+      />
+      <br />
+      <textarea
+        name="comentarios"
+        id=""
+        cols="30"
+        rows="10"
+        required
+      ></textarea>
+
+      <input type="submit" value="Enviar" />
+
+      <a href="index.html#inicio">☝️</a>
+    </form>
+
+    <hr />
+
+    <h2 id="data_attributes">Data Attributes</h2>
+
+    <ul>
+      <li data-id="1" data-name="spring">Primavera</li>
+      <li data-id="2" data-name="summer">Verano</li>
+      <li data-id="3" data-name="autumn">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+
+    <a href="index.html#inicio">☝️</a>
+
+    <hr />
+
+    <h2>Metaetiquetas para SEO y Posicionamiento</h2>
+
+    <!-- link rel= 'canonical' href='http://tudominio.com/la-url-canonica'-->
+
+    <hr />
+
+    <h2>Accesibilidad WEB</h2>
+
+    <h3 role="title">Estaciones del año</h3>
+    <ul role="list">
+      <li role="listitem" tabindex="1">Primavera</li>
+      <li role="listitem" tabindex="2">Verano</li>
+      <li role="listitem" tabindex="3">Otoño</li>
+      <li role="listitem" tabindex="4">Invierno</li>
+    </ul>
+
+    <a
+      href="#"
+      target="_blank"
+      role="link"
+      aria-label="En este enlace encontrarás más información sobre las estaciones del año"
+    ></a>
+
+    <!-- https://web.dev/accessible -->
+    <!-- https://html5accessibility.com -->
+    <!-- https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA-->
   </body>
 </html>
